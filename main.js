@@ -80,7 +80,7 @@ function eliminartarea() {
     let entrada = prompt(mensaje + "\nIngrese el número de la tarea que desea eliminar:");
     let seleccion = parseInt(entrada);
 
-    // Comprobamos que lo ingresado no sea vacío, y esté en el rango
+    // Conversion
     if (entrada !== "" && seleccion >= 1 && seleccion <= tareas.length) {
         let tareaEliminada = tareas.splice(seleccion - 1, 1);
         alert('Tarea eliminada: "' + tareaEliminada[0] + '"');
